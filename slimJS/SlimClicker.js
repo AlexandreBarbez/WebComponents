@@ -15,7 +15,7 @@ class SlimClicker extends Slim {
 var template = "<row>" +
     "<h1>SlimJS Clicker :</h1>" +
     "<div bind>{{slimCount}}</div>" +
-    "<button click='increment'>test</button></row>";
+    "<button click='increment'>Cliquez ici</button></row>";
 
 
 Slim.tag('my-tag', template, SlimClicker)
