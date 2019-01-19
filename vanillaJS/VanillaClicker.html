@@ -1,12 +1,23 @@
 <template id="clicker-vanilla-template">
+    <style>
+        h1 {
+            color : black;
+        }
+        #content {
+            background-color: darkred;
+            color : white;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 
-    <row>
+    <div id="content">
         <h1>Vanilla Clicker :</h1>
-        <div id="vanillaClickCounter" class="bg-orange text-center"></div>
+        <div id="vanillaClickCounter"></div>
         <button >Cliquez ici</button>
-    </row>
-
+    </div>
 </template>
 
 <!--Include script for custom element-->
 <script src="VanillaClicker.js"></script>
+
