@@ -1,19 +1,20 @@
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';
 import '@polymer/iron-icons/iron-icons.js';
 
 
 class PolymerClicker extends PolymerElement {
-  constructor(){
-      super();
-      this.counter = 0;
-  }
+    constructor() {
+        super();
+        this.counter = 0;
 
-  increment(){
-    this.counter += 1;
-  }
+    }
 
-  static get template() {
-    return html`
+    increment() {
+        this.counter += 1;
+    }
+
+    static get template() {
+        return html`
       <style>
         h1 {
           color:black;
@@ -32,6 +33,7 @@ class PolymerClicker extends PolymerElement {
         <button on-click="increment">Cliquez ici</button>
       </div>
     `;
-  }
+    }
 }
+
 customElements.define('clicker-polymer', PolymerClicker);

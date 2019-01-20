@@ -25,7 +25,6 @@ class SlimClicker extends Slim {
 
     onCreated(){
         this.slimCount = "0";
-        console.log("created");
     }
 
     get useShadow(){
