@@ -2,10 +2,14 @@
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
-    "slim-js": {
-      "version": "4.0.5",
-      "resolved": "https://registry.npmjs.org/slim-js/-/slim-js-4.0.5.tgz",
-      "integrity": "sha512-Emo+6LmT/Dc7mvFvZubxOLIxgzVk0xJhm3rfOTKclFw7i1zApWLTGSOUPOoUugkim//KdINgIe4Ol7oSB8YgGg=="
-    }
+    "@polymer/iron-icon": "^3.0.0-pre.12",
+    "@polymer/iron-icons": "^3.0.0-pre.12",
+    "@polymer/polymer": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^1.0.20",
+    "slim-js": "^4.0.5",
+    "vue": "^2.5.22"
+  },
+  "resolutions": {
+    "@webcomponents/webcomponentsjs": "1.0.20"
   }
 }

@@ -1,19 +1,31 @@
-var template =
-    "<div s:id='content'>" +
-    "<h1 s:id='h1'>SlimJS Clicker :</h1>" +
-    "<div bind>{{slimCount}}</div>" +
-    "<button click='increment'>Cliquez ici</button>" +
-    "</div>";
+import '../node_modules/slim-js/Slim.js';
+
+function buildTemplate(){
+    return `
+            <style>
+                h1 {
+                  color:black;
+                }
+                #content{
+                  color:white;
+                  border-radius: 5px;
+                  background-color: blue;
+                  text-align: center;
+                }
+            </style>
+            <div id='content'>
+                <h1>SlimJS Clicker :</h1>
+                <div bind>{{slimCount}}</div>
+                <button click='increment'>Cliquez ici</button>
+            </div>
+        `;
+}
 
 class SlimClicker extends Slim {
 
     onCreated(){
         this.slimCount = "0";
         console.log("created");
-        this.content.style.backgroundColor ="blue";
-        this.content.style.borderRadius ="5px";
-        this.content.style.color ="white";
-        this.content.style.textAlign="center";
     }
 
     get useShadow(){
@@ -27,5 +39,5 @@ class SlimClicker extends Slim {
 
 }
 
-Slim.tag('clicker-slimjs', template, SlimClicker)
+Slim.tag('clicker-slimjs', buildTemplate(), SlimClicker)
 
